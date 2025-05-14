@@ -3,8 +3,30 @@ Instructions and configuration files for setting up the Python debugger in VSCod
 
 ## Table Of Contents
 
-- [Installation](#installation)
+- [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+- [Configurations](#configurations)
+    - [Command Line Debugger](#command-line-debugger)
+    - [Notebook Debugger](#notebook-debugger)
+    - [Remote Debugger](#remote-debugger)
 
-## Installation
+## Getting Started
+### Prerequisites
+Make sure to have the following programs installed:
+| Requirement                             | Installation                         |
+| --------------------------------------- | ------------------------------------ |
+| VSCode                                  | https://code.visualstudio.com/download      |
+| Miniconda (Optional)                    | https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions |
+| Colab Pro (Optional)                    | https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions |
 
-This document 
+### Installation
+
+
+## Configurations
+
+### Command Line Debugger
+### Notebook Debugger
+### Remote Debugger
+
+
