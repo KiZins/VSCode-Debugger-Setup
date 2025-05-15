@@ -89,13 +89,34 @@ Below is an example configuration for running a Python module with arguments:
 > Ensure that the current working directory is set to the Homework1 folder.  This can be done by opening the Explorer tab (`Ctrl+Shift+E`) and verifing that Homework1 appears as the top-level folder.
 
 
+<!-- ![VSCode Terminal Showing the Explorer Tab with HW1](img/explorer_tab_hw1.png) -->
+<p align="center">
+  <img src="img/explorer_tab_hw1.png" alt="VSCode Terminal Showing the Explorer Tab with HW1", width="450"/>
+</p>
 
 
 
 Navigate to the Run and Debug tab (`Ctrl+Shift+D`) and click `create a launch.json file` link to begin the process of adding a configuration file.
 
 
+<!--  ![Run and Debug Tab with Highlight on Create Button](img/launch_json.png) -->
+<p align="center">
+  <img src="img/launch_json.png" alt="Run and Debug Tab with Highlight on Create Button", width="450"/>
+</p>
+
+
+
+
+
+Return to the Explorer tab (`Ctrl+Shift+E`) and verify the `.vscode` folder was added to the top-level directory.
+<!--  ![VSCode Terminal Showing the Explorer Tab with HW1 and VSCode Folder](img/explorer_tab_launch.png) -->
+<p align="center">
+  <img src="img/explorer_tab_launch.png" alt="VSCode Terminal Showing the Explorer Tab with HW1 and VSCode Folder", width="450"/>
+</p>
+
+
 ### Useful Configurations
+Common 
 
 ### Enabling Break Points
 
