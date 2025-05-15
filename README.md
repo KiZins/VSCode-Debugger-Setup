@@ -50,17 +50,42 @@ Verify that the Python Debugger extension has been installed
 ## Configurations
 The VSCode debugger lets you set breakpoints, step through code, inspect variables, and interactivly test functions similar to a Jupyter notebook.  Before diving into specific configurations used in this class, let's cover how the debugger is setup and managed.  
 
-1. Navigate to the Run and Debug tab on the sidebar - shortcut (Ctrl+Shift+D):
+Navigate to the Run and Debug tab on the sidebar (Ctrl+Shift+D)
 <!-- ![VSCode Terminal Highlighting Run and Debug Tab](img/run_debug_tab.png.png) -->
 <p align="center">
   <img src="img/run_debug_tab.png" alt="Highlight Run and Debug Tab" width="950"/>
 </p>
 
-2. 
+
+> [!NOTE]  
+> The Run and Debug tab will initially ask for you to create a `launch.json` file before using the debugger, as shown above.  However, this screen will look different the working directory already has a `launch.json` file
+
 
 
 #### What is `Launch.json`
-Configurations used by the debugger are defined in `launch.json` file and stored in the current working directory under the `.vscode` folder. 
+The `launch.json` file defines the configuration used by the VSCode debugger.  The `launch.json` file is  located in the `.vscode` folder within the current working directory.
+
+Below is an example configuration for running a Python module with arguments: 
+```json
+{
+    "name": "Train Script",
+    "type": "debugpy",
+    "request": "launch",
+    "module": "folder.file",
+    "args": ["arg1", "arg2", ... , "argN-1","argN"]
+}
+```
+
+| Field                             | Description                         |
+| --------------------------------------- | ------------------------------------ |
+| [name](https://code.visualstudio.com/docs/python/debugging#_name)                                 | Display name for the configuration shown in the VSCodeUI     |
+| [type](https://code.visualstudio.com/docs/python/debugging#_type)                   | Specifies the type of debugger.  Use `debugpy` for Python debugging.|
+| [request](https://code.visualstudio.com/docs/python/debugging#_request)                    | Indicates how to start debugging. Use `launch` to run a script. |
+| [module](https://code.visualstudio.com/docs/python/debugging#_module)                    | Specifies the module to run like using `python -m folder.file`.|
+| [args](https://code.visualstudio.com/docs/python/debugging#_args)                    | List of command line arguements passed to the script. |
+| [console](https://code.visualstudio.com/docs/python/debugging#_console)                    | Optional: Specifies where to display program output.  The default is `integratedterminal`. |
+
+
 
 
 ### Script Debugger
