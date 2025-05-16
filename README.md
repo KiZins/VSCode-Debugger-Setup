@@ -7,9 +7,12 @@ Instructions and configuration files for setting up the Python debugger in VSCod
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
 - [Configurations](#configurations)
-    - [Script Debugger](#script-debugger)
-    - [Notebook Debugger](#notebook-debugger)
-    - [Remote Debugger](#remote-debugger)
+    - [What is launch.json](#what-is-launchjson)
+    - [Creating a launch.json](#creating-a-launchjson)
+    - [Useful Configurations](#useful-configurations)
+    - [Enabling Break Points](#enabling-break-points)
+    - [Running the Debugger](#running-the-debugger)
+- [Notebook Debugging](#notebook-debugging)
 
 ## Getting Started
 
