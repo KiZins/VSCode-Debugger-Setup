@@ -126,7 +126,7 @@ Set the debug configuration to `Module`.
   <img src="img/launch_json_step_3.png" alt="VSCode Command Palette Highlighting Python Debug Module", width="450"/>
 </p>
 
-Replace `enter-your-your-module-name` with the name of the module you will be running.  For this class you will mostly be working with the modules `grader` or `homework.train`
+Replace `enter-your-your-module-name` with the name of the module you will be running.  For this class, we will mostly be working with the  `grader` or `homework.train` modules.
 <!--  ![VSCode Command Palette Highlighting Python Debug Module Naming](img/launch_json_step_5.png) -->
 <p align="center">
   <img src="img/launch_json_step_5.png" alt="VSCode Command Palette Highlighting Python Debug Module Naming", width="450"/>
@@ -263,6 +263,15 @@ A Debug toolbar will appear near the top of the screen.
 <!-- ![VSCode Debug Toolbar](img/debug_step_1.png) -->
 <p align="center">
   <img src="img/debug_step_1.png" alt="VSCode Debug Toolbar" width="950"/>
+</p>
+
+
+<p align="center">
+  <img src="img/debug_step_2.png" alt="VSCode Debug Toolbar" width="950"/>
+</p>
+
+<p align="center">
+  <img src="img/debug_step_3.png" alt="VSCode Debug Toolbar" width="950"/>
 </p>
 
 > [!NOTE]  
