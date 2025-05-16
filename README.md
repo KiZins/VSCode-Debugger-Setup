@@ -40,7 +40,7 @@ Type `Python Debugger` in the searchbar.
   <img src="img/search_extensions.png" alt="VSCode Extension Tab Search" width="450"/>
 </p>
 
-Verify that the Python Debugger extension has been installed .
+Verify that the Python Debugger extension has been installed.
 
 <!-- ![VSCode Terminal Highlighting Python Debugger Extension](img/python_debugger_extension.png) -->
 <p align="center">
@@ -49,7 +49,7 @@ Verify that the Python Debugger extension has been installed .
 
 
 ## Configurations
-The VSCode debugger lets you set breakpoints, step through code, inspect variables, and interactivly test functions similar to a Jupyter notebook.  Before diving into specific configurations used in this class, let's cover how the debugger is setup and managed.  
+The VSCode debugger lets you set breakpoints, step through code, inspect variables, and interactively test functions similar to a Jupyter notebook.  Before diving into specific configurations used in this class, let's cover how the debugger is set up and managed.  
 
 Open the Run and Debug tab (`Ctrl+Shift+D`) located on the left sidebar.
 <!-- ![VSCode Terminal Highlighting Run and Debug Tab](img/run_debug_tab.png.png) -->
@@ -126,7 +126,7 @@ Set the debug configuration to `Module`.
   <img src="img/launch_json_step_3.png" alt="VSCode Command Palette Highlighting Python Debug Module", width="450"/>
 </p>
 
-Replace `enter-your-your-module-name` with the name of the module you will be running.  For this class, we will mostly be working with the  `grader` or `homework.train` modules.
+Replace `enter-your-module-name` with the name of the module you will be running.  For this class, we will mostly be working with the  `grader` or `homework.train` modules.
 <!--  ![VSCode Command Palette Highlighting Python Debug Module Naming](img/launch_json_step_5.png) -->
 <p align="center">
   <img src="img/launch_json_step_5.png" alt="VSCode Command Palette Highlighting Python Debug Module Naming", width="450"/>
@@ -271,8 +271,8 @@ Several useful panels and tools will appear once the debugger starts:
 | 1. Debug Toolbar                               | Used to control the debug session with the buttons appearing in the order of Continue, Step Over, Step Into, Step Out, Restart, Stop.  Refer to [Debug Actions](https://code.visualstudio.com/docs/debugtest/debugging#_debug-actions) to learn what each button does.  |
 | 2. Variables                  | Displays local and global variables available at the current breakpoint.|
 | 3. Call Stack                    | Shows the sequence of function calls that led to the current point, which is useful for tracing logic. |
-| 4. Breakpoints                    | Useful for enabling/disabling globabl and user-defined breakpoints by checking/unchecking the boxes.|
-| 5. Debug Console                  | Useful for evalutating expressions and interacting with the running program similar to a notebook.  Open it via `View > Debug Console` or the shortcut (`Ctrl+Shift+Y`).    |
+| 4. Breakpoints                    | Useful for enabling/disabling global and user-defined breakpoints by checking/unchecking the boxes.|
+| 5. Debug Console                  | Useful for evaluating expressions and interacting with the running program similar to a notebook.  Open it via `View > Debug Console` or the shortcut (`Ctrl+Shift+Y`).    |
 
 > [!TIP]  
 > Try experimenting with the Debug console.  The image below shows simple expressions run in `make_it_pytorch_1` on the x variable.
@@ -286,7 +286,7 @@ Several useful panels and tools will appear once the debugger starts:
 
 
 ## Notebook Debugging
-Debugging Jupyer notebooks in VSCode is straightforward and does not require a configuration file.  
+Debugging Jupyter notebooks in VSCode is straightforward and does not require a configuration file.  
 
 ### To get started:
 
