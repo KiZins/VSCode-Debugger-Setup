@@ -61,7 +61,7 @@ Open the Run and Debug tab (`Ctrl+Shift+D`) located on the left sidebar.
 
 
 > [!NOTE]  
-> The Run and Debug tab will initially ask for you to create a `launch.json` file before using the debugger, as shown above.  However, this screen will look different the working directory already has a `launch.json` file
+> The Run and Debug tab will initially ask for you to create a `launch.json` file before using the debugger, as shown above.  However, this screen will look different if the working directory already has a `launch.json` file.
 
 ---
 
