@@ -30,14 +30,14 @@ Open the Extension tab (`Ctrl+Shift+X`) located on the left sidebar.
 <!-- ![VSCode Terminal Highlighting Extensions Tab](img/extension_tab.png) -->
 <!-- Better formatting in my opinion-->
 <p align="center">
-  <img src="img/extension_tab.png" alt="VSCode Extension Tab" width="1000"/>
+  <img src="img/extension_tab.png" alt="VSCode Extension Tab" width="950"/>
 </p>
 
 Type `Python Debugger` in the searchbar.
 
 <!-- ![VSCode Terminal Highlighting Search Box in Extensions Tab](img/search_extensions.png) -->
 <p align="center">
-  <img src="img/search_extensions.png" alt="VSCode Extension Tab Search" width="950"/>
+  <img src="img/search_extensions.png" alt="VSCode Extension Tab Search" width="450"/>
 </p>
 
 Verify that the Python Debugger extension has been installed .
