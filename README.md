@@ -221,6 +221,9 @@ Click on the editor margin (space to the left of line number) to add or remove b
 > [!NOTE]  
 > There are more advanced breakpoint that can be set by right-clicking on the editor margin.  Refer to the [documentation](https://code.visualstudio.com/docs/debugtest/debugging#_breakpoint-types) for more details.
 
+> [!Warning]
+> Breakpoints will be ignored if the debugger encounters a `raise NotImplementedError` line of code before reaching the desired breakpoint.
+
 
 ### Running the Debugger
 Click the Run Button or press `F5` on the keyboard to run the debugger.
@@ -228,7 +231,7 @@ Click the Run Button or press `F5` on the keyboard to run the debugger.
 A Debug toolbar should appear near the top of the screen.
 
 > [!NOTE]  
-> Refer to [Debug Actions] (https://code.visualstudio.com/docs/debugtest/debugging#_debug-actions) if it is your first time using a debugger to find out what each button in the toolbar does.  
+> Refer to [Debug Actions](https://code.visualstudio.com/docs/debugtest/debugging#_debug-actions) if it is your first time using a debugger to find out what each button in the toolbar does.  
 
 
 ## Notebook Debugging
