@@ -105,13 +105,29 @@ Navigate to the Run and Debug tab (`Ctrl+Shift+D`) and click the `create a launc
 </p>
 
 A pop-up menu will appear under the Command Palatte that lists installed debuggers.
+<!--  ![VSCode Terminal Highlighting Command Palatte](img/launch_json_step_1.png) -->
+<p align="center">
+  <img src="img/launch_json_step_1.png" alt="VSCode Terminal Highlighting Command Palatte", width="950"/>
+</p>
 
-Select `Python Debugger` to configure the debugger's type to `debugpy`
+Select `Python Debugger` to configure the debugger's type to `debugpy`.
+<!--  ![VSCode Command Palatte Highlighting Python Debug](img/launch_json_step_2.png) -->
+<p align="center">
+  <img src="img/launch_json_step_2.png" alt="VSCode Command Palatte Highlighting Python Debug", width="450"/>
+</p>
 
-Select `Module`
+
+Set the debug configuration to `Module`.
+<!--  ![VSCode Command Palatte Highlighting Python Debug Module](img/launch_json_step_3.png) -->
+<p align="center">
+  <img src="img/launch_json_step_3.png" alt="VSCode Command Palatte Highlighting Python Debug Module", width="450"/>
+</p>
 
 Replace `enter-your-your-module-name` with the name of the module you will be running.  For this class you will mostly be working with the modules `grader` or `homework.train`
-
+<!--  ![VSCode Command Palatte Highlighting Python Debug Module Naming](img/launch_json_step_5.png) -->
+<p align="center">
+  <img src="img/launch_json_step_5.png" alt="VSCode Command Palatte Highlighting Python Debug Module Naming", width="450"/>
+</p>
 
 Return to the Explorer tab (`Ctrl+Shift+E`) and verify the `.vscode` folder was added to the top-level directory.
 <!--  ![VSCode Terminal Showing the Explorer Tab with HW1 and VSCode Folder](img/explorer_tab_launch.png) -->
