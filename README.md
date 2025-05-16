@@ -286,13 +286,22 @@ Several useful panels and tools will appear once the debugger starts:
 
 
 ## Notebook Debugging
+Debugging Jupyer notebooks in VSCode is straightforward and does not require a configuration file.  
 
+###To get started:
 
+1. **Set a breakpoint** by clicking in the editor margin next to the line of code you want to pause on.
+    <p align="center">
+      <img src="img/notebook_editor_margin.png" alt="VSCode Jupyter Notebook Editor Margin" width="450"/>
+    </p>
+2. **Click the dropdown arrow** next to the green Run button (in the top-left corner of the cell).
+    <p align="center">
+      <img src="img/notebook_dropdown_arrow.png" alt="VSCode Jupyter Notebook Dropdown Arrow" width="450"/>
+    </p>
+3. **Select "Debug Cell"** from the dropdown menu.
+   <p align="center">
+      <img src="img/notebook_dropdown_menu.png" alt="VSCode Jupyter Notebook Dropdown Menu" width="450"/>
+    </p>
 
-
-### Notebook Debugger
-### Remote Debugger
-
-## Troubleshooting
 
 
