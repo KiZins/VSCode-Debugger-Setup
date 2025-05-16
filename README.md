@@ -229,6 +229,10 @@ Return to the Explorer tab (`Ctrl+Shift+E`) and verify the `.vscode` folder was 
 ```
 
 Use the dropdown menu next to the Run button to change configurations.
+<!--  ![Run and Debug Tab with Highlight on Changing Configs](img/multiple_configs.png) -->
+<p align="center">
+  <img src="img/multiple_configs.png" alt="Run and Debug Tab with Highlight on Changing Configs", width="450"/>
+</p>
 
 
 </details>
