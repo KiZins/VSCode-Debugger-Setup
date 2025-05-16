@@ -259,57 +259,33 @@ Click the Run Button or press `F5` on the keyboard to run the debugger.
   <img src="img/run_debugger.png" alt="VSCode Running the Debugger" width="450"/>
 </p>
 
-A Debug toolbar will appear near the top of the screen.
-<!-- ![VSCode Debug Toolbar](img/debug_step_1.png) -->
+Several useful panels and tools will appear once the debugger starts:
+<!-- ![VSCode Debugger Important Features](img/debug_multi_step.png) -->
 <p align="center">
-  <img src="img/debug_step_1.png" alt="VSCode Debug Toolbar" width="950"/>
+  <img src="img/debug_multi_step.png" alt="VSCode Debugger Important Features"/>
 </p>
 
 
+| Feature                             | Description                         |
+| --------------------------------------- | ------------------------------------ |
+| 1. Debug Toolbar                               | Used to control the debug session with the buttons appearing in the order of Continue, Step Over, Step Into, Step Out, Restart, Stop.  Refer to [Debug Actions](https://code.visualstudio.com/docs/debugtest/debugging#_debug-actions) to learn what each button does.  |
+| 2. Variables                  | Displays local and global variables available at the current breakpoint.|
+| 3. Call Stack                    | Shows the sequence of function calls that led to the current point, which is useful for tracing logic. |
+| 4. Breakpoints                    | Useful for enabling/disabling globabl and user-defined breakpoints by checking/unchecking the boxes.|
+| 5. Debug Console                  | Useful for evalutating expressions and interacting with the running program similar to a notebook.  Open it via `View > Debug Console` or the shortcut (`Ctrl+Shift+Y`).    |
+
+> [!TIP]  
+> Try experimenting with the Debug console.  The image below shows simple expressions run in `make_it_pytorch_1` on the x variable.
+<!-- ![VSCode Debug Console with Simple Expressions](img/debug_console.png) -->
 <p align="center">
-  <img src="img/debug_step_2.png" alt="VSCode Debug Toolbar" width="950"/>
+  <img src="img/debug_console.png" alt="VSCode Debug Console with Simple Expressions"/>
 </p>
 
-<p align="center">
-  <img src="img/debug_step_3.png" alt="VSCode Debug Toolbar" width="950"/>
-</p>
 
-> [!NOTE]  
-> Refer to [Debug Actions](https://code.visualstudio.com/docs/debugtest/debugging#_debug-actions) if it is your first time using a debugger to find out what each button in the toolbar does.  
+
 
 
 ## Notebook Debugging
-
-
-
-
-
-<!-- ![VSCode Terminal Highlighting launch json](img/create_launch_json.png) -->
-<p align="center">
-  <img src="img/create_launch_json.png" alt="Highlight create json" width="950"/>
-</p>
-
-
-<!-- ![VSCode Terminal Debugger Selection](img/debugger_setup_1.png) -->
-<p align="center">
-  <img src="img/debugger_setup_1.png" alt="Python Debugger Selection" width="950"/>
-</p>
-
-
-<!-- ![VSCode Terminal Python Debugger on Module](img/debugger_setup_2.png) -->
-<p align="center">
-  <img src="img/debugger_setup_2.png" alt="Python Debugger on Module" width="950"/>
-</p>
-
-<!-- ![VSCode Terminal Python Debugger Module Naming](img/debugger_setup_3.png) -->
-<p align="center">
-  <img src="img/debugger_setup_3.png" alt="Python Debugger Module Naming" width="950"/>
-</p>
-
-<!-- ![VSCode Terminal Python Debugger folder](img/debugger_setup_3.png) -->
-<p align="center">
-  <img src="img/debugger_setup_3.png" alt="Python Debugger Module Naming" width="950"/>
-</p>
 
 
 
