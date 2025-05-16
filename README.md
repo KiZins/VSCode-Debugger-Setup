@@ -21,7 +21,7 @@ Have the following programs installed before continuing:
 | Miniconda (Optional)                    | https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions |
 
 ### Installation
-The Python Debugger is included with the official Python extension for VS Code, but it is still important to verify its installation.
+The Python Debugger is included with the official Python extension for VS Code, but it is important to verify its installation.
 
 Open the Extension tab (`Ctrl+Shift+X`) located on the left sidebar.
 <!-- ![VSCode Terminal Highlighting Extensions Tab](img/extension_tab.png) -->
@@ -79,9 +79,9 @@ Below is an example configuration for running a Python module with arguments:
 | [name](https://code.visualstudio.com/docs/python/debugging#_name)                                 | Display name for the configuration shown in the VSCodeUI     |
 | [type](https://code.visualstudio.com/docs/python/debugging#_type)                   | Specifies the type of debugger.  Use `debugpy` for Python debugging.|
 | [request](https://code.visualstudio.com/docs/python/debugging#_request)                    | Indicates how to start debugging. Use `launch` to run a script. |
-| [module](https://code.visualstudio.com/docs/python/debugging#_module)                    | Specifies the module to run like using `python -m folder.file`.|
+| [module](https://code.visualstudio.com/docs/python/debugging#_module)                    | Specifies the module to run and it is like using `python -m folder.file`.|
 | [args](https://code.visualstudio.com/docs/python/debugging#_args)                    | List of command line arguements passed to the script. |
-| [console](https://code.visualstudio.com/docs/python/debugging#_console)                    | Optional: Specifies where to display program output.  The default is `integratedterminal`. |
+| [console](https://code.visualstudio.com/docs/python/debugging#_console)                    | Optional: Specifies where to display program outputs.  The default is `integratedterminal`. |
 
 
 ### Creating a `launch.json`
@@ -96,7 +96,7 @@ Below is an example configuration for running a Python module with arguments:
 
 
 
-Navigate to the Run and Debug tab (`Ctrl+Shift+D`) and click `create a launch.json file` link to begin the process of adding a configuration file.
+Navigate to the Run and Debug tab (`Ctrl+Shift+D`) and click the `create a launch.json file`.
 
 
 <!--  ![Run and Debug Tab with Highlight on Create Button](img/launch_json.png) -->
@@ -104,8 +104,13 @@ Navigate to the Run and Debug tab (`Ctrl+Shift+D`) and click `create a launch.js
   <img src="img/launch_json.png" alt="Run and Debug Tab with Highlight on Create Button", width="450"/>
 </p>
 
+A pop-up menu will appear under the Command Palatte that lists installed debuggers.
 
+Select `Python Debugger` to configure the debugger's type to `debugpy`
 
+Select `Module`
+
+Replace `enter-your-your-module-name` with the name of the module you will be running.  For this class you will mostly be working with the modules `grader` or `homework.train`
 
 
 Return to the Explorer tab (`Ctrl+Shift+E`) and verify the `.vscode` folder was added to the top-level directory.
@@ -115,12 +120,115 @@ Return to the Explorer tab (`Ctrl+Shift+E`) and verify the `.vscode` folder was 
 </p>
 
 
+
 ### Useful Configurations
-Common 
+<details>
+
+<summary>Python Debugger: Grader</summary>
+
+```json
+{
+    "name": "Python Debugger: Grader",
+    "type": "debugpy",
+    "request": "launch",
+    "module": "grader",
+    "args": ["homework"]
+}
+```
+</details>
+
+<details>
+
+<summary>Python Debugger: Grader Verbose</summary>
+
+```json
+{
+    "name": "Python Debugger: Grader Verbose",
+    "type": "debugpy",
+    "request": "launch",
+    "module": "grader",
+    "args": ["homework", "-v"]
+}
+```
+</details>
+
+<details>
+<summary>Python Debugger: Grader Very Verbose</summary>
+
+```json
+{
+    "name": "Python Debugger: Grader Very Verbose",
+    "type": "debugpy",
+    "request": "launch",
+    "module": "grader",
+    "args": ["homework", "-vv"]
+}
+```
+</details>
+
+
+
+
+<details>
+<summary>Python Debugger: Train Script</summary>
+
+```json
+{
+    "name": "Python Debugger: Train Script",
+    "type": "debugpy",
+    "request": "launch",
+    "module": "homework.train",
+    "args": ["--model_name", "linear", "--num_epoch", "10"]
+}
+```
+</details>
+
+<details>
+<summary>Python Debugger: Multiple Configurations Example</summary>
+
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python Debugger: Grader",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "grader",
+            "args": ["homework"]
+        },
+        {
+            "name": "Python Debugger: Train Script",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "homework.train",
+            "args": ["--model_name", "linear", "--num_epoch", "10"]
+        },
+    ],
+}
+```
+
+Use the dropdown menu next to the Run button to change configurations.
+
+
+</details>
 
 ### Enabling Break Points
+Click on the editor margin (space to the left of line number) to add or remove breakpoints.  Alternatively, use `F9` to add or remove a breakpoint on the current line.
+
+
+> [!NOTE]  
+> There are more advanced breakpoint that can be set by right-clicking on the editor margin.  Refer to the [documentation](https://code.visualstudio.com/docs/debugtest/debugging#_breakpoint-types) for more details.
+
 
 ### Running the Debugger
+Click the Run Button or press `F5` on the keyboard to run the debugger.
+
+A Debug toolbar should appear near the top of the screen.
+
+> [!NOTE]  
+> Refer to [Debug Actions] (https://code.visualstudio.com/docs/debugtest/debugging#_debug-actions) if it is your first time using a debugger to find out what each button in the toolbar does.  
 
 
 ## Notebook Debugging
