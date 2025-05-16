@@ -80,13 +80,13 @@ Below is an example configuration for running a Python module with arguments:
 | [type](https://code.visualstudio.com/docs/python/debugging#_type)                   | Specifies the type of debugger.  Use `debugpy` for Python debugging.|
 | [request](https://code.visualstudio.com/docs/python/debugging#_request)                    | Indicates how to start debugging. Use `launch` to run a script. |
 | [module](https://code.visualstudio.com/docs/python/debugging#_module)                    | Specifies the module to run and it is like using `python -m folder.file`.|
-| [args](https://code.visualstudio.com/docs/python/debugging#_args)                    | List of command line arguements passed to the script. |
+| [args](https://code.visualstudio.com/docs/python/debugging#_args)                    | List of command line arguments passed to the script. |
 | [console](https://code.visualstudio.com/docs/python/debugging#_console)                    | Optional: Specifies where to display program outputs.  The default is `integratedterminal`. |
 
 
 ### Creating a `launch.json`
 > [!IMPORTANT]
-> Ensure that the current working directory is set to the Homework1 folder.  This can be done by opening the Explorer tab (`Ctrl+Shift+E`) and verifing that Homework1 appears as the top-level folder.
+> Ensure that the current working directory is set to the Homework1 folder.  This can be done by opening the Explorer tab (`Ctrl+Shift+E`) and verifying that Homework1 appears as the top-level folder.
 
 
 <!-- ![VSCode Terminal Showing the Explorer Tab with HW1](img/explorer_tab_hw1.png) -->
@@ -104,29 +104,29 @@ Navigate to the Run and Debug tab (`Ctrl+Shift+D`) and click the `create a launc
   <img src="img/launch_json.png" alt="Run and Debug Tab with Highlight on Create Button", width="450"/>
 </p>
 
-A pop-up menu will appear under the Command Palatte that lists installed debuggers.
-<!--  ![VSCode Terminal Highlighting Command Palatte](img/launch_json_step_1.png) -->
+A pop-up menu will appear under the Command Palette that lists installed debuggers.
+<!--  ![VSCode Terminal Highlighting Command Palette](img/launch_json_step_1.png) -->
 <p align="center">
-  <img src="img/launch_json_step_1.png" alt="VSCode Terminal Highlighting Command Palatte", width="950"/>
+  <img src="img/launch_json_step_1.png" alt="VSCode Terminal Highlighting Command Palette", width="950"/>
 </p>
 
 Select `Python Debugger` to configure the debugger's type to `debugpy`.
-<!--  ![VSCode Command Palatte Highlighting Python Debug](img/launch_json_step_2.png) -->
+<!--  ![VSCode Command Palette Highlighting Python Debug](img/launch_json_step_2.png) -->
 <p align="center">
-  <img src="img/launch_json_step_2.png" alt="VSCode Command Palatte Highlighting Python Debug", width="450"/>
+  <img src="img/launch_json_step_2.png" alt="VSCode Command Palette Highlighting Python Debug", width="450"/>
 </p>
 
 
 Set the debug configuration to `Module`.
-<!--  ![VSCode Command Palatte Highlighting Python Debug Module](img/launch_json_step_3.png) -->
+<!--  ![VSCode Command Palette Highlighting Python Debug Module](img/launch_json_step_3.png) -->
 <p align="center">
-  <img src="img/launch_json_step_3.png" alt="VSCode Command Palatte Highlighting Python Debug Module", width="450"/>
+  <img src="img/launch_json_step_3.png" alt="VSCode Command Palette Highlighting Python Debug Module", width="450"/>
 </p>
 
 Replace `enter-your-your-module-name` with the name of the module you will be running.  For this class you will mostly be working with the modules `grader` or `homework.train`
-<!--  ![VSCode Command Palatte Highlighting Python Debug Module Naming](img/launch_json_step_5.png) -->
+<!--  ![VSCode Command Palette Highlighting Python Debug Module Naming](img/launch_json_step_5.png) -->
 <p align="center">
-  <img src="img/launch_json_step_5.png" alt="VSCode Command Palatte Highlighting Python Debug Module Naming", width="450"/>
+  <img src="img/launch_json_step_5.png" alt="VSCode Command Palette Highlighting Python Debug Module Naming", width="450"/>
 </p>
 
 Return to the Explorer tab (`Ctrl+Shift+E`) and verify the `.vscode` folder was added to the top-level directory.
@@ -252,7 +252,7 @@ Click the Run Button or press `F5` on the keyboard to run the debugger.
   <img src="img/run_debugger.png" alt="VSCode Running the Debugger" width="450"/>
 </p>
 
-A Debug toolbar should appear near the top of the screen.
+A Debug toolbar will appear near the top of the screen.
 <!-- ![VSCode Debug Toolbar](img/debug_step_1.png) -->
 <p align="center">
   <img src="img/debug_step_1.png" alt="VSCode Debug Toolbar" width="950"/>
