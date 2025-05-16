@@ -51,7 +51,7 @@ The VSCode debugger lets you set breakpoints, step through code, inspect variabl
 Open the Run and Debug tab (`Ctrl+Shift+D`) located on the left sidebar.
 <!-- ![VSCode Terminal Highlighting Run and Debug Tab](img/run_debug_tab.png.png) -->
 <p align="center">
-  <img src="img/run_debug_tab.png" alt="Highlight Run and Debug Tab" width="950"/>
+  <img src="img/run_debug_tab.png" alt="Highlight Run and Debug Tab" width="450"/>
 </p>
 
 
@@ -217,6 +217,10 @@ Use the dropdown menu next to the Run button to change configurations.
 ### Enabling Break Points
 Click on the editor margin (space to the left of line number) to add or remove breakpoints.  Alternatively, use `F9` to add or remove a breakpoint on the current line.
 
+<!-- ![VSCode Adding a Breakpoint](img/breakpoint.png) -->
+<p align="center">
+  <img src="img/breakpoint.png" alt="VSCode Adding a Breakpoint" width="950"/>
+</p>
 
 > [!NOTE]  
 > There are more advanced breakpoint that can be set by right-clicking on the editor margin.  Refer to the [documentation](https://code.visualstudio.com/docs/debugtest/debugging#_breakpoint-types) for more details.
@@ -227,8 +231,16 @@ Click on the editor margin (space to the left of line number) to add or remove b
 
 ### Running the Debugger
 Click the Run Button or press `F5` on the keyboard to run the debugger.
+<!-- ![VSCode Running the Debugger](img/run_debugger.png) -->
+<p align="center">
+  <img src="img/run_debugger.png" alt="VSCode Running the Debugger" width="450"/>
+</p>
 
 A Debug toolbar should appear near the top of the screen.
+<!-- ![VSCode Debug Toolbar](img/debug_step_1.png) -->
+<p align="center">
+  <img src="img/debug_step_1.png" alt="VSCode Debug Toolbar" width="950"/>
+</p>
 
 > [!NOTE]  
 > Refer to [Debug Actions](https://code.visualstudio.com/docs/debugtest/debugging#_debug-actions) if it is your first time using a debugger to find out what each button in the toolbar does.  
