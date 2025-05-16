@@ -6,7 +6,7 @@ Instructions and configuration files for setting up the Python debugger in VSCod
 - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
-- [Configurations](#configurations)
+- [Debugger Setup and Configurations](#debugger-setup-and-configurations)
     - [What is launch.json](#what-is-launchjson)
     - [Creating a launch.json](#creating-a-launchjson)
     - [Useful Configurations](#useful-configurations)
@@ -22,6 +22,8 @@ Have the following programs installed before continuing:
 | --------------------------------------- | ------------------------------------ |
 | VSCode                                  | https://code.visualstudio.com/download      |
 | Miniconda (Optional)                    | https://www.anaconda.com/docs/getting-started/miniconda/install#quickstart-install-instructions |
+
+---
 
 ### Installation
 The Python Debugger is included with the official Python extension for VS Code, but it is important to verify its installation.
@@ -48,7 +50,7 @@ Verify that the Python Debugger extension has been installed.
 </p>
 
 
-## Configurations
+## Debugger Setup and Configurations
 The VSCode debugger lets you set breakpoints, step through code, inspect variables, and interactively test functions similar to a Jupyter notebook.  Before diving into specific configurations used in this class, let's cover how the debugger is set up and managed.  
 
 Open the Run and Debug tab (`Ctrl+Shift+D`) located on the left sidebar.
@@ -61,7 +63,7 @@ Open the Run and Debug tab (`Ctrl+Shift+D`) located on the left sidebar.
 > [!NOTE]  
 > The Run and Debug tab will initially ask for you to create a `launch.json` file before using the debugger, as shown above.  However, this screen will look different the working directory already has a `launch.json` file
 
-
+---
 
 ### What is `Launch.json`
 The `launch.json` file defines the configuration used by the VSCode debugger.  The `launch.json` file is located in the `.vscode` folder within the current working directory.
@@ -86,6 +88,7 @@ Below is an example configuration for running a Python module with arguments:
 | [args](https://code.visualstudio.com/docs/python/debugging#_args)                    | List of command line arguments passed to the script. |
 | [console](https://code.visualstudio.com/docs/python/debugging#_console)                    | Optional: Specifies where to display program outputs.  The default is `integratedterminal`. |
 
+---
 
 ### Creating a `launch.json`
 > [!IMPORTANT]
@@ -138,7 +141,7 @@ Return to the Explorer tab (`Ctrl+Shift+E`) and verify the `.vscode` folder was 
   <img src="img/explorer_tab_launch.png" alt="VSCode Terminal Showing the Explorer Tab with HW1 and VSCode Folder", width="450"/>
 </p>
 
-
+---
 
 ### Useful Configurations
 <details>
@@ -237,6 +240,8 @@ Use the dropdown menu next to the Run button to change configurations.
 
 </details>
 
+---
+
 ### Enabling Break Points
 Click on the editor margin (space to the left of line number) to add or remove breakpoints.  Alternatively, use `F9` to add or remove a breakpoint on the current line.
 
@@ -251,6 +256,7 @@ Click on the editor margin (space to the left of line number) to add or remove b
 > [!Warning]
 > Breakpoints will be ignored if the debugger encounters a `raise NotImplementedError` line of code before reaching the desired breakpoint.
 
+---
 
 ### Running the Debugger
 Click the Run Button or press `F5` on the keyboard to run the debugger.
@@ -280,8 +286,6 @@ Several useful panels and tools will appear once the debugger starts:
 <p align="center">
   <img src="img/debug_console.png" alt="VSCode Debug Console with Simple Expressions"/>
 </p>
-
-
 
 
 
