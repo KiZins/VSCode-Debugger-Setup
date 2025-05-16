@@ -281,7 +281,7 @@ Several useful panels and tools will appear once the debugger starts:
 | 5. Debug Console                  | Useful for evaluating expressions and interacting with the running program similar to a notebook.  Open it via `View > Debug Console` or the shortcut (`Ctrl+Shift+Y`).    |
 
 > [!TIP]  
-> Try experimenting with the Debug console.  The image below shows simple expressions run in `make_it_pytorch_1` on the x variable.
+> Try experimenting with the Debug Console. The image below demonstrates simple expressions evaluated in `make_it_pytorch_1`, using the variable `x`.
 <!-- ![VSCode Debug Console with Simple Expressions](img/debug_console.png) -->
 <p align="center">
   <img src="img/debug_console.png" alt="VSCode Debug Console with Simple Expressions"/>
