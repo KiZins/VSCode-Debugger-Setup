@@ -243,7 +243,7 @@ Use the dropdown menu next to the Run button to change configurations.
 ---
 
 ### Enabling Break Points
-Click on the editor margin (space to the left of line number) to add or remove breakpoints.  Alternatively, use `F9` to add or remove a breakpoint on the current line.
+Click on the editor margin (space to the left of line numbers) to add or remove breakpoints.  Alternatively, use `F9` to add or remove a breakpoint on the current line.
 
 <!-- ![VSCode Adding a Breakpoint](img/breakpoint.png) -->
 <p align="center">
